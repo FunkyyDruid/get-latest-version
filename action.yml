@@ -1,0 +1,12 @@
+name: 'Get Latest Version'
+description: 'Extracts the latest version from an array of versions'
+inputs:
+  versions:  # id of input
+    description: 'Array of versions, but stringified since we can only get Strings/Booleans'
+    required: true
+outputs:
+  latest:
+    description: 'The latest version'
+runs:
+  using: 'node16'
+  main: 'index.js'
